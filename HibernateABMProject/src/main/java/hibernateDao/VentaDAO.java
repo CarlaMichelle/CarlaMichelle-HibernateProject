@@ -13,7 +13,7 @@ import hibernateDto.VentaEntity;
 
 public class VentaDAO {
 	
-	public void insertVenta (VentaEntity ven) {
+public void insertVenta (VentaEntity ven) {
 		
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		session.beginTransaction();

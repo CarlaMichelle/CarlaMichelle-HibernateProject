@@ -115,7 +115,7 @@ public class AppHibernate {
 
 	private static void darAlta(Scanner sc) {
 
-		PersonaEntity per = new PersonaEntity();
+		
 		System.out.println("=====ALTA DE PERSONA =====");
 		System.out.println("");
 		System.out.println("Ingrese NOMBRE");
@@ -133,7 +133,7 @@ public class AppHibernate {
 			perEn.setFechaNacimiento(fechaNac);
 			perEn.setEdad(edad);
 			PersonaDAO perDao = new PersonaDAO();
-			perDao.insertPersona(per);
+			perDao.insertPersona(perEn);
 
 		} catch (ParseException e1) {
 			e1.printStackTrace();
